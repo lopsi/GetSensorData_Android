@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="Update Frequency" >
+         <ListPreference
+            android:dialogTitle="Select the Delay Type"
+            android:entries="@array/delay_type"
+            android:entryValues="@array/id_delay_type"
+            android:key="opcion1"
+            android:summary="Select typical sensor delays from sensors"
+            android:title="Typical Update Rates" 
+            android:icon="@drawable/action_settings_black"/>
+           
+        <CheckBoxPreference
+            android:key="opcion5"
+            android:summary="Check to use the manually selected update rate"
+            android:title="Use Custom Update Rate" 
+            android:defaultValue="false"/>
+
+        <EditTextPreference
+            android:id="@+id/desiredupdaterate"
+            android:dialogTitle="Enter your desired update rate in Hz"
+            android:key="opcion2"
+            android:summary="Select desired update rate"
+            android:title="Change Custom Update Rate" 
+            android:inputType="number"/>
+        
+    </PreferenceCategory>
+    
+    
+    <PreferenceCategory android:title="Display Preferences" >
+         <CheckBoxPreference
+            android:key="opcion3"
+            android:summary="Select a dark background color/white text color"
+            android:title="Black Background Color"
+            android:defaultValue="false" />
+         
+         <EditTextPreference
+            android:dialogTitle="Font Size"
+            android:key="opcion4"
+            android:summary="Select the font size in pixels"
+            android:title="Font Size"
+            android:inputType="number" />
+       
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Bluetooth Preferences" >
+        <CheckBoxPreference
+            android:key="opcion6"
+            android:summary="Select for using Bluetooth as BLE; un mark if classic Bluetooth desired"
+            android:title="BLE 4.0 for iBeacons"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

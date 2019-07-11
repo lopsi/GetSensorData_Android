@@ -1,0 +1,13 @@
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_settings"
+        android:title="@string/menu_settings"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item android:id="@+id/menu_exit"
+        android:title="@string/menu_exit"
+        />
+    <item android:id="@+id/menu_about"
+        android:title="@string/menu_about"
+        />
+</menu>
